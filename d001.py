@@ -1,10 +1,3 @@
-print('How many rows do you want?')
+n = input('Specify a number:')
 
-typed_number = input() ## query user how many rows of dots
-completed_rows = 0  ## declare variables
-dots = '.'
-
-while completed_rows < typed_number:   ##loop begins
-	print(dots)
-	dots = dots + '.'
-	completed_rows = completed_rows + 1
+print("\n".join((i*"*").center(n*2) for i in range(1, n*2, 2)))
